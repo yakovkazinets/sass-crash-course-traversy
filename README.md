@@ -45,7 +45,11 @@
  ``` .message { @extend %message-shared; } ```
 
 ## - Operators
- ``` article[role="main"] { width: 600px / 960px * 100%; }```
+ ```javascript 
+ article[role="main"] {
+   width: 600px / 960px * 100%; 
+ }
+ ```
 
 ## - Conditionals
  - Can use if/else
