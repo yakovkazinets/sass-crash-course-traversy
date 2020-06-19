@@ -16,33 +16,51 @@
 
 ## - Nesting
 
- ``` nav {```
- ```    ul {```
- ```       margin: 0; ```
- ```       padding: 0;```
- ```       list-style: none;```
- ```    } ```
- ``` } ```
+ ``` javascript
+  nav {
+     ul {
+        margin: 0; 
+        padding: 0;
+        list-style: none;
+     } 
+  } 
+ ```
  
 ## - Modules
  - CSS sends more request to server, but SASS is not sending much request. It handles it.
  - **_** sass file will be ignored during sass compilation
- ``` // _base.scss ```
- ``` $font-stack: Helvatica, sans-serif;  ```
- ``` $primary-color: #333;  ```
+ ``` javascript 
+ // _base.scss 
+ $font-stack: Helvatica, sans-serif;  
+ $primary-color: #333; 
+ ```
 
  - Use it other sass file
 
- ``` @use 'base' ```
- ``` .box{background-color: base.$primary-color; } ```
+ ```javascript
+ @use 'base' 
+ .box{
+    background-color: base.$primary-color; 
+ } 
+ ```
 
 ## - Mixins & Functions
- ``` @mixin transform($property){ transform: $property; } ```
- ``` .box { @include transform(rotate(30deg)); } ```
+ ```javascript
+ @mixin transform($property){ transform: $property; } 
+ .box { @include transform(rotate(30deg)); } 
+  ```
 
 ## - Inheritance
- ``` %message-shared { border: 1px solid #ccc; padding: 10px; color: #333} ```
- ``` .message { @extend %message-shared; } ```
+ ```javascript
+ %message-shared { 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    color: #333
+ }
+ .message { 
+    @extend %message-shared; 
+ } 
+ ```
 
 ## - Operators
  ```javascript 
