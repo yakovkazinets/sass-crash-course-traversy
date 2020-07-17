@@ -1,6 +1,15 @@
 # SASS Crash Course By <Traversy Media>
 
-## Course Link - https://www.youtube.com/watch?v=nu5mdN2JIwM
+## [Course Link](https://www.youtube.com/watch?v=nu5mdN2JIwM)
+
+## - Installing SASS
+```
+// To install global sass in Mac or Linux
+sudo npm i -g sass
+
+// To compile it
+sass --watch scss/style.scss css/style.css
+```
 
 ## - What is SASS?
  - Syntactically Awesome StyleSheets
